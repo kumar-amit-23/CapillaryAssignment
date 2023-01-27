@@ -21,6 +21,7 @@ public class BookReadServiceImpl implements BookReadService {
 	@Autowired
 	private RestTemplate restTemplate;
 
+//	Method to read from BookStoreService Application.
 	@Override
 	@CircuitBreaker(name = CIRCUIT_BREAKER_NAME, fallbackMethod = FALL_BACK_METHOD)
 	public ResponseEntity<String> readBook() {
