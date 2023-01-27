@@ -4,7 +4,7 @@
 
 
 1. Run the ReadService Application and BookStoreService Application.
-2. Send a get Request to the Api -> http ://localhost:8080/recommended.
+2. Send a get Request to the Api -> [http ://localhost:8080/recommended](http://localhost:9080/to-read).
 3. If the BookStoreService will be up it will send the response as “Service is up”, else it will send response as “Service is down” (Which is a fallback method implemented In ReadService Application).
 4. The configuration for Circuit Breaker is done in application.yml file of ReadService Application.
     * The failure Rate threshold is set to 50, which means if 50% of request fails the state of circuit will change from CLOSED to OPEN.
